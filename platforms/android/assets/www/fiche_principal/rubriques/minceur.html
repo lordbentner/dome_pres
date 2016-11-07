@@ -1,0 +1,41 @@
+<?php include('header.html'); ?>  
+    <header class="header"><h1>Minceur</h1></header>
+  <?php include('../gestion/deconnection.php'); ?>
+<section class="view">
+     <div id="corps">      
+ <form class="form-horizontal" method="post" action="questions.php?q=5&url=minceur">
+      <textarea>D'où vient le surpoids?</textarea>
+  <br />
+  <textarea>Comment l'éviter?</textarea>
+  <br />
+   <p>Si votre réponse est OUI, cochez la cas.Lorsque plusieurs troubles sont cités, la présence d'un seul suffit pour cocher.</p>
+        <input type="checkbox" onclick='this.form.submit()' name="1" value="1">Vous consommez plus au de 2 sucreries par jour(biscuits,gâteaux,barre de céréales,confiserie,chocolat,
+          sodas,jus de fruit,sirop,miel...)
+        <p>
+          <p>
+         <input type="checkbox" onclick='this.form.submit()' name="2" value="1">Vous sautez l'un des 3 principaux repas(petit déjeuner, déjeuner, dîner) plus d'une fois
+          par semaine
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="3" value="1">Vous ressentez régulièrement des fringales avant les repas
+        <p>
+           <input type="checkbox" onclick='this.form.submit()' name="4" value="1">Vous pratiquez moins d'1h30 d'activité physique par semaine
+        <p>
+         <input type="checkbox" onclick='this.form.submit()' name="5" value="1">Vous ne mangez pas à heures régulières, dans le calme, assise et sans télévision 
+           <p>Si vous avez coché 3 cases au moins, c'est que vous êtes concerné par des problèmes de peaux :</p>
+        <div id="propo">
+                  Traitement proposé :
+                  <ul>
+          <li>Led:</li>
+          <br />
+          <li>Infrarouge:</li>
+          <br />
+          <li>Oligoéléments:</li>
+          <br />
+        </ul>
+        <div ng-include="'rubriques/offre.html'"></div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

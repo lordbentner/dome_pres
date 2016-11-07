@@ -1,0 +1,40 @@
+<?php include('header.html'); ?>
+<header class="header"><h1>Anti-stress</h1></header>
+  <?php include('../gestion/deconnection.php'); ?>
+<section class="view">
+    <div id="corps">
+   <div class="form-horizontal">
+ <textarea>d'ou vient l'oxydation?</textarea>
+  <br />
+  <textarea>Comment l'éviter?</textarea>
+  <br />
+   <p>Si votre réponse est OUI, cochez la cas.Lorsque plusieurs troubles sont cités, la présence d'un seul suffit pour cocher.</p>
+        <input type="checkbox" name="cond1" id="cond1">Vous vous sentez viellir prématurement
+        <p>
+        <p>
+        <input type="checkbox" name="cond2" id="cond2">Vous avez des taches cutanées, des rides marquées et/ou une diminution de l'élasticité cutanée que vous estimez
+        prématurées pour votre âge
+        <p>
+        <input type="checkbox" name="cond3" id="cond3">Vous avez l'habitude de vous exposer de façon excessive au soleil
+        <p>
+          <input type="checkbox" name="cond3" id="cond3">Vous
+        <p>
+        <input type="checkbox" name="cond3" id="cond4">Vous  
+          <p>Si vous avez coché 3 cases au moins, c'est que vous êtes concerné par des problèmes de peaux :</p>
+        <div id="propo">
+                  Traitement proposé :
+                  <ul>
+          <li>Led:</li>
+          <br />
+          <li>Infrarouge:</li>
+          <br />
+          <li>Oligoéléments:</li>
+          <br />
+        </ul>
+        <div ng-include="'rubriques/offre.html'"></div>
+</div>       
+</div>
+</div>
+</div>
+</section>
+</html>

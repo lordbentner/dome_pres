@@ -1,0 +1,28 @@
+ <?php 
+
+  session_start();
+
+   include('menu.php');
+
+    if(isset($_GET['q']))
+    {
+      $i=1;
+      while($i<6)     
+      {
+        $n = $i+$_GET['q'];
+        $q = "q".$n;
+      //  echo $q; echo '<br />';
+        if (isset($_POST[$i]))
+        {
+          $req1 = $bdd->query("UPDATE questions SET $q=1 WHERE id_client=$id");
+        }
+        else
+          $req1 = $bdd->query("UPDATE questions SET $q=NULL WHERE id_client=$id");
+      $i++;
+      }
+    }
+
+     $url = $_GET['url'];
+     header('Status: 302 Moved Permanently', false, 302); 
+     header("location : $url.php");
+  ?>

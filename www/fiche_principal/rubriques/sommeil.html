@@ -1,0 +1,40 @@
+<?php include('header.html'); ?>
+  <title>Meilleur sommeil</title>
+  <header class="header"><h1>Meilleur sommeil</h1></header>
+   <?php include('../gestion/deconnection.php'); ?>
+<section class="view">
+     <div id="corps">
+       <form class="form-horizontal" method="post" action="questions.php?q=35&url=sommeil">
+ <textarea>D'où vient une mauvaise qualité de sommeil?</textarea>
+  <br />
+  <textarea>Comment l'éviter?</textarea>
+  <br />
+   <p>Si votre réponse est OUI, cochez la cas.Lorsque plusieurs troubles sont cités, la présence d'un seul suffit pour cocher.</p>
+        <input type="checkbox" onclick='this.form.submit()' name="1" value="1">Vous ressentez un manque de sommeil réparateur
+        <p>
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="2" value="1">Vous avez des difficultés d'endormissement
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="3" value="1">Vous avez le sommeil agité et/ou des réveils nocturnes
+        <p>
+          <input type="checkbox" onclick='this.form.submit()' name="4" value="1">Vous souffrez de sueurs nocturnes
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="5" value="1">Vous vous réveillez régulièrement en seconde partie de nuit 1h et 3h du matin
+     <p>Si vous avez coché 3 cases au moins, c'est que vous êtes concerné par des problèmes de peaux :</p>
+        <div id="propo">
+                  Traitement proposé :
+                  <ul>
+          <li>Led:</li>
+          <br />
+          <li>Infrarouge:</li>
+          <br />
+          <li>Oligoéléments:</li>
+          <br />
+        </ul>
+        <div ng-include="'rubriques/offre.html'"></div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

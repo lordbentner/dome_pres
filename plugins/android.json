@@ -1,0 +1,39 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-bluetooth-serial": {
+            "PACKAGE_NAME": "com.ionicframework.testapp621773"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.testapp621773"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.testapp621773"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.testapp621773"
+        },
+        "cordova-plugin-sqlite": {
+            "PACKAGE_NAME": "com.ionicframework.testapp621773"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.testapp621773"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.testapp621773"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.ionicframework.testapp621773"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.testapp621773"
+        }
+    },
+    "dependent_plugins": {}
+}

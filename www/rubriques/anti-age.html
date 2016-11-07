@@ -1,0 +1,43 @@
+  <div class="rubriques">
+  <title>Anti-age</title>
+ <header class="header"><h1>Anti-age</h1></header>
+<section class="view">
+     <div id="corps">
+       <form class="form-horizontal" method="post" action="questions.php?q=30&url=anti-age">
+               <textarea>d'ou vient l'oxydation?</textarea>
+        <br />
+        <textarea>Comment l'éviter?</textarea>
+        <br />
+        <p>Si votre réponse est OUI, cochez la cas.Lorsque plusieurs troubles sont cités, la présence d'un seul suffit pour cocher.</p>
+        <input type="checkbox" onclick='this.form.submit()' name="1" id="cond1" value="1" >Vous vous sentez viellir prématurement
+        <p>
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="2" id="cond2" value="1">Vous avez des taches cutanées, des rides marquées et/ou une diminution de l'élasticité cutanée que vous estimez
+        prématurées pour votre âge
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="3" id="cond3" value="1" >Vous avez l'habitude de vous exposer de façon excessive au soleil
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="4" id="cond4" value="1">Vous
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="5" id="cond5" value="1" >Vous
+        <p>
+            <p>Si vous avez coché 3 cases au moins, c'est que vous êtes concerné par des problèmes de peaux :</p>
+        <div id="propo">
+                  Traitement proposé :
+                  <ul>
+          <li>Led:</li>
+          <br />
+          <li>Infrarouge:</li>
+          <br />
+          <li>Oligoéléments:</li>
+          <br />
+        </ul>
+        <div ng-include="'rubriques/offre.html'"></div>
+</div>
+      </div>
+    </div>
+</div>
+</section>
+</body>
+</html>
+<div>

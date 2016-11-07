@@ -1,0 +1,39 @@
+<div class="rubriques">
+	 <header class="header"><h1>Detox</h1></header>
+<section class="view">
+     <div id="corps">
+      <form class="form-horizontal" method="post" action="questions.php?q=25&url=detox">
+     <textarea>D'où vient la fatigue?La fatigue est un phénomène normal causé par une activité physique ou cérébrale excessive ou intense, qui disparait avec le repos</textarea>
+  <br />
+  <textarea>Comment l'éviter?</textarea>
+  <br />
+   <p>Si votre réponse est OUI, cochez la cas.Lorsque plusieurs troubles sont cités, la présence d'un seul suffit pour cocher.</p>
+       <input type="checkbox" onclick='this.form.submit()' name="1" value="1">Vous consommez de la viande et de la charcuterie plus de 5 fois par semaine
+        <p>
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="2" value="1" >Vous vivez dans un environnement urbain pollué ou êtes en contact avec des produits chimiques(peintre,coiffeur,blanchisseur)
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="3" value="1">Vous constatez une localisation de masse grasse importante au niveau abdominal
+        <p>
+          <input type="checkbox" onclick='this.form.submit()' name="4" value="1">Vous êtes quotidiennement exposée aux pollutions électromagnétiques
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="5" value="1">Vous suivez un traitement médicamenteux de longue durée(plus d'un mois)
+          <p>Si vous avez coché 3 cases au moins, c'est que vous êtes concerné par des problèmes de peaux :</p>
+        <div id="propo">
+                  Traitement proposé :
+                  <ul>
+          <li>Led:</li>
+          <br />
+          <li>Infrarouge:</li>
+          <br />
+          <li>Oligoéléments:</li>
+          <br />
+        </ul>
+        <div ng-include="'rubriques/offre.html'"></div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
+</div>

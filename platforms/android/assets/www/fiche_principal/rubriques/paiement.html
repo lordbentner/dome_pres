@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta charset="utf-8" /> 
+   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </head>
+
+<title>Confirmation de paiement</title>
+<header class="header"><h1>Confirmation de paiement</h1></header>
+<section class="view">
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-3" id="prix"></div>
+      </div>
+   <form class="form-horizontal" style="margin-top:2%">
+     <label for="paiement" class="col-sm-2 control-label">Mode de paiement</label>
+     <div class="form-group">
+    <select name="paiement" size="1">
+        <option value='cb'>carte bleu</option>
+        <option value='mastercard'>Mastercard</option>
+        <option value='mastercard2'>Mastercard2</option>
+    </select>
+    </div>
+    <label for="numero" class="col-sm-2 control-label">Numero de carte</label>
+    <div class="form-group">
+        <input type="text" name="numero" id="numero" placeholder="Numero de carte" onblur="verifchamp(this)"></input>
+    </div>
+    <label for="numero" class="col-sm-2 control-label">Nom de l'acheteur</label>
+    <div class="form-group">
+        <input type="text" name="nom" id="nom" placeholder="Nom de l'acheteur" onblur="verifchamp(this)"></input>
+    </div>
+    <label for="code" class="col-sm-2 control-label">Code de la carte</label>
+    <div class="form-group">
+        <input type="text" name="code" id="code" placeholder="code de la carte" onblur="verifchamp(this)"></input>       
+    </div>
+        <label for="date" class="col-sm-2 control-label">Date d'expiration</label>
+    <div class="form-group">
+        <input type="date" name="code" id="code" placeholder="01/01/2015" onblur="verifchamp(this)"></input>       
+    </div>
+       <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" name="envoyer" class="btn btn-primary">Confirmer</button>
+      <a href="didacticiel.php">Retour au didacticiel</a>
+    </div>
+  </div>
+    </form>
+</section>
+ <script>
+      var url = String(document.location);
+      var i=0;
+      while(i<url.length)
+        {
+            if(url[i] == '?' && url[i+1] == 'e')
+              document.getElementById(prix.id).innerHTML='<span><h3>prix de l\'offre d\'essai:10€</h3></span>';
+            else if(url[i] == '?' && url[i+1] == 'd')
+                document.getElementById(prix.id).innerHTML='<span><h3>prix de l\'offre découverte:40€</h3></span>';
+              else if(url[i] == '?' && url[i+1] == 'a')
+                document.getElementById(prix.id).innerHTML='<span><h3>prix de l\'abonnement:100€</h3></span>';
+            i++;
+        }
+    </script>
+</html>

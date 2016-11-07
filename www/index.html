@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ionicApp">
+<head>
+    <meta charset="utf-8">
+    <title>Vital dome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+     <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="swiper-container swiper-container-h">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-include="'home.html'"></div>
+            <div class="swiper-slide" ng-include="'presentation.html'"></div>
+            <div class="swiper-slide" ng-include="'inscription.html'"></div>
+            <div class="swiper-slide" ng-include="'connexion.html'"></div>
+            <div class="swiper-slide">
+              <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" ng-include="'fiche_sante.html'"></div>
+                        <div class="swiper-slide" ng-include="'rubriques/anti-age.html'"></div>
+                        <div class="swiper-slide" ng-include="'rubriques/anti-stress.html'"></div>
+                        <div class="swiper-slide" ng-include="'rubriques/detox.html'"></div>
+                        <div class="swiper-slide" ng-include="'rubriques/digestion.html'"></div>
+                        <div class="swiper-slide" ng-include="'rubriques/douleur.html'"></div>
+                        <div class="swiper-slide" ng-include="'rubriques/fatigue.html'"></div>
+                        <div class="swiper-slide" ng-include="'rubriques/minceur.html'"></div>
+                        <div class="swiper-slide" ng-include="'rubriques/peau.html'"></div>
+                        <div class="swiper-slide" ng-include="'rubriques/sommeil.html'"></div>
+                        <div class="swiper-slide" ng-include="'rubriques/stress.html'"></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                </div>
+            </div>
+            <div class="swiper-slide" ng-include="'fiche_bienetre.html'"></div>           
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-h"></div>
+    </div>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

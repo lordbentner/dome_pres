@@ -1,0 +1,39 @@
+<div class="rubriques">
+ <header class="header"><h1>Digestion</h1></header>
+<section class="view">
+     <div id="corps">
+      <form class="form-horizontal" method="post" action="questions.php?q=20&url=digestion">
+     <textarea>D'où vient l'inconfort digestif?</textarea>
+    <br />
+    <textarea>Comment l'éviter?</textarea>
+      <br />
+   <p>Si votre réponse est OUI, cochez la cas.Lorsque plusieurs troubles sont cités, la présence d'un seul suffit pour cocher.</p>
+        <input type="checkbox" onclick='this.form.submit()' name="1" id="cond1" value="1">Vous vous plaignez fréquemment de douleurs intestinales, ballonnements et flatulences
+        <p>
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="2" id="cond2" value="1">Vous souffrez de somnolence ou d'inconfort après les repas
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="3" id="cond3" value="1">Vous avez l'habitude de faire un repas plus coppieux le soir que le midi
+        <p>
+          <input type="checkbox" onclick='this.form.submit()' name="4" id="cond4" value="1">Vous avez des problèmes de transit intestinal(diarrhées,constipation)
+        <p>
+        <input type="checkbox" onclick='this.form.submit()' name="5" id="cond5" value="1">Vous avez la langue blanche, pâteuse ou l'haleine chargée
+          <p>Si vous avez coché 3 cases au moins, c'est que vous êtes concerné par des problèmes de peaux :</p>
+        <div id="propo">
+                  Traitement proposé :
+                  <ul>
+          <li>Led:</li>
+          <br />
+          <li>Infrarouge:</li>
+          <br />
+          <li>Oligoéléments:</li>
+          <br />
+        </ul>
+        <div ng-include="'rubriques/offre.html'"></div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
+</div>
